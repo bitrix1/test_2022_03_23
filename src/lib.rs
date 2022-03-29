@@ -1,8 +1,8 @@
-//start-1
 pub mod macros_ex;
 pub mod module_ex;
+pub mod thread_ex;
+
 pub use crate::module_ex::say_a;
-//end-1
 
 mod partial_eq;
 pub use crate::partial_eq::test12312313;
