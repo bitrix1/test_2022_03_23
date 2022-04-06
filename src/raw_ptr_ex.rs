@@ -22,4 +22,23 @@ mod tests {
             println!("r3 is: {:?}", *r3);
         }
     }
+    #[test]
+    fn fn2() {
+        let abcd = String::from("abcdфыва😂");
+        for (index, ch) in abcd.char_indices() {
+            let slice = &abcd[index..index + ch.len_utf8()];
+            // let char2: Vec<char> = slice.iter().map(|b| *b as char).collect::<Vec<_>>();
+            // let s = "Hello world!";
+            // let char_vec: Vec<char> = s.chars().collect();
+            let mut v1 = Vec::from(slice);
+            let mut v2 = &v1[0];
+            println!("{:?}", v1);
+            v1[0] = 100;
+            v2 = &0;
+            println!("{:?}", v1);
+            println!("{:?}", &slice[0..ch.len_utf8()]);
+            // println!("{:?}, len: {:?}", slice, ch.len_utf8());
+        }
+        dbg!(println!("{:?}", abcd));
+    }
 }

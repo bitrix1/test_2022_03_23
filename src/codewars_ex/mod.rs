@@ -1,4 +1,5 @@
 #[allow(dead_code)]
+
 fn solution(s: &str) -> String {
     s.chars()
         .flat_map(|c| {
