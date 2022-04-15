@@ -1,6 +1,7 @@
 pub mod codewars_ex;
 pub mod macros_ex;
 pub mod module_ex;
+pub mod option_unwrap_ex;
 pub mod raw_ptr_ex;
 pub mod thread_ex;
 pub use crate::module_ex::say_a;
