@@ -1,5 +1,6 @@
 #![allow(unused)]
 #[allow(dead_code)]
+mod roman_numerals_encoder;
 fn solution(s: &str) -> String {
     s.chars()
         .flat_map(|c| {
