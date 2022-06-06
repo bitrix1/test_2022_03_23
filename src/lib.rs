@@ -5,6 +5,7 @@ pub mod option_unwrap_ex;
 pub mod raw_ptr_ex;
 pub mod thread_ex;
 pub mod tokio_ex;
+pub mod linked_list_ex;
 pub use crate::module_ex::say_a;
 
 mod partial_eq;
